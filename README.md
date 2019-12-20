@@ -6,6 +6,7 @@ sh ./install-deps.sh
 
 ## Run
 python jsfs.py
+python jsfs.py --proxy=http://localhost:8080
 
 ## Screenshots
 ### ls command example
