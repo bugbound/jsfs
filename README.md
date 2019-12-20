@@ -5,8 +5,10 @@ Explore the extraordinary world of a websites javascript, via a basic linux file
 sh ./install-deps.sh
 
 ## Run
+```python
 python jsfs.py
 python jsfs.py --proxy=http://localhost:8080
+```
 
 ## Screenshots
 ### ls command example
