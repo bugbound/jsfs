@@ -17,3 +17,6 @@ python jsfs.py --proxy=http://localhost:8080
 ### sh command example
 ![alt text](https://github.com/bugbound/jsfs/blob/master/hackerone-sh.png "Running sh on hackerone site")
 
+### sh with args command example
+![alt text](https://github.com/bugbound/jsfs/blob/master/sh-with-args.png "Running sh with args")
+
