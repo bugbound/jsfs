@@ -109,7 +109,7 @@ class JSFSInterpreter(Cmd):
         print('')
 
     def help_sh(self):
-        print '\n'.join([ 'sh <path>','\tRun a javascript function', '\tcurrently only works on functions with zero arguments!','','EXAMPLE: ','\tsh showSiteLoading','\tsh hideSiteLoading',''])
+        print '\n'.join([ 'sh <path> [args]','\tRun a javascript function', '\tWorks with functions requiring additional arguments!','','EXAMPLE: ','\tsh showSiteLoading','\tsh hideSiteLoading','\tsh getUrlParam arg1','\tsh /somepath/bah/blahBlahBlah arg1 arg2...',''])
 
     
     def complete_ls(self, text, line, begidx, endidx):
