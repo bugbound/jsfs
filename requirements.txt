@@ -1,4 +1,3 @@
 docopt
-cmd
 selenium
 chromedriver
