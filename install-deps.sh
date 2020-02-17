@@ -1,3 +1,3 @@
 apt update
-apt install -y google-chrome-stable
+apt install -y chromium-chromedriver
 pip install -r requirements.txt
