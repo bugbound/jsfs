@@ -1,3 +1,3 @@
 apt update
 apt install -y chromium-chromedriver
-pip install -r requirements.txt
+pip2 install -r requirements.txt
