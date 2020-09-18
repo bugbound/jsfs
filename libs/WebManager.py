@@ -1,5 +1,7 @@
 from selenium import webdriver
 from selenium.webdriver import Chrome
+from selenium.webdriver.chrome.options import Options
+
 
 class WebManager:
 	def __init__(self, start_page, proxy):
@@ -8,12 +10,14 @@ class WebManager:
 		self.current_driver = -1
 		self.start_page = start_page
 		
-		chrome_options = webdriver.ChromeOptions()
-		if(proxy):
-			chrome_options.add_argument("--proxy-server={0}".format(proxy))
-		driver = Chrome(chrome_options=chrome_options)
+        
+		options = Options()
+		options.add_argument("start-maximized")
+		options.binary_location="/usr/bin/chromium-browser"
+        if proxy:
+            options.add_argument("--proxy-server={0}".format(proxy))
+		driver = webdriver.Chrome(chrome_options=options, executable_path='/usr/bin/chromedriver')		
 		driver.get(self.start_page)
-		
 		self.webdrivers.append(driver)
 		self.current_driver = 0
 	
